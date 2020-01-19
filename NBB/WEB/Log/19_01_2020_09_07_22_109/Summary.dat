@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="projects">
+			<Node name="project0">
+				<Node name="tests">
+					<Node name="test1">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="name" type="S" value="Logout"/>
+						<Prp name="status" type="I" value="3"/>
+						<Prp name="durationwithoutchildren" type="I" value="0"/>
+						<Prp name="duration" type="I" value="0"/>
+						<Prp name="starttime" type="D" value="43849.3802432523"/>
+					</Node>
+					<Node name="test0">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="Unable to find the object Sys.Browser(&quot;firefox&quot;). See Details for additional information."/>
+							</Node>
+						</Node>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBEADUARAA0ADAAQgBCADkALQA5ADIARQBGAC0ANABCAEMAMQAtADkAQQBFADYALQAzADYAMQBCADEAMQA3AEUAQwA4ADcANQB9AC8AewAzAEMAMgBEADAANQA1AEYALQBCAEIAMAA0AC0ANAA2ADAAMgAtAEIANwBCAEQALQAxADIAQQA1AEIANwAzAEYARQBFADcAQQB9AC8AGhHL3v86Z0CLViaRMGjlQwAAAAAvAGUAbQBwAHQAeQA="/>
+						<Prp name="name" type="S" value="Login"/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="durationwithoutchildren" type="I" value="10588"/>
+						<Prp name="duration" type="I" value="10588"/>
+						<Prp name="starttime" type="D" value="43849.3801171181"/>
+					</Node>
+				</Node>
+				<Prp name="failedtests" type="I" value="1"/>
+				<Prp name="name" type="S" value="WEB"/>
+				<Prp name="incompletedtests" type="I" value="1"/>
+				<Prp name="warningtests" type="I" value="0"/>
+				<Prp name="duration" type="I" value="10588"/>
+				<Prp name="starttime" type="D" value="43849.3801171181"/>
+			</Node>
+		</Node>
+		<Prp name="user" type="S" value="testhouse1"/>
+		<Prp name="stop" type="D" value="43849.3802478819"/>
+		<Prp name="failedtests" type="I" value="1"/>
+		<Prp name="host" type="S" value="DBS1"/>
+		<Prp name="warningtests" type="I" value="0"/>
+		<Prp name="starttime" type="D" value="43849.3801170023"/>
+		<Prp name="key" type="S" value="{F825E150-AB6F-4ED2-8CA5-BCCD5D433BD6}"/>
+		<Prp name="tests" type="I" value="2"/>
+		<Prp name="name" type="S" value="NBB_Autoamtion_Sprint 1"/>
+		<Prp name="testname" type="S" value="WEB"/>
+		<Prp name="executionstatus" type="I" value="2"/>
+		<Prp name="incompletedtests" type="I" value="1"/>
+	</Node>
+</Nodes>
